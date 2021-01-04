@@ -1,0 +1,18 @@
+{% extends "index.html" %}
+
+{% block body %}
+       <h1> Tous les chemins ménent au mot philosophie </h1>
+        
+        <div class="alert alert-success"> Nombre de tentatives: {{session.score}} </div>
+
+        <form action="/move" method="POST">
+                <input type="radio"  name="destination" value={{liens[0]}}    id={{liens[0]}} checked="checked" /> <label for={{liens[0]}} > {{liens[0]}}  </label> <br/>
+                {% for lien in liens[1:] %}                
+                   <input type="radio"  name="destination" value={{lien}}    id={{lien}}  /> <label for={{lien}} > {{lien}}  </label> <br/>
+                {% endfor %}
+                <input type="submit" value="Valider" />
+
+        </form>        
+          
+{% endblock %}
+
