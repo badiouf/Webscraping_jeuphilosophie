@@ -6,6 +6,7 @@ urllib3==1.25.9
 Jinja2==2.11.2
 pyOpenSSL==19.1.0
 backports.functools-lru-cache==1.6.1
+gunicorn==19.7.1
 
 
 
