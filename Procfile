@@ -1,1 +1,1 @@
-web: gunicorn app:philosophie
+web: gunicorn philosophie:app
